@@ -1,0 +1,30 @@
+{
+    "name": "xtwoend/hyperf-otp",
+    "description": "OTP service support TOTP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdul Hafidz Anshari",
+            "email": "aditans88@gmail.com"
+        }
+    ],
+    "require": {
+        "spomky-labs/otphp": "^10.0",
+        "hyperf-ext/mail": "^2.1",
+        "hyperf/guzzle": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xtwoend\\HyperfOtp\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "hyperf": {
+            "config": "Xtwoend\\HyperfOtp\\ConfigProvider"
+        }
+    }
+}
