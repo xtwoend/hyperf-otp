@@ -117,6 +117,7 @@ class OtpValidator
 
         if (!empty($getData)) {
             if ($getData->otp == $request->otp) {
+                
                 OtpService::updateTo($request, DBStates::USED);
                 return Responder::formatter([
                     'code' => StatusCodes::OTP_VERIFIED,
